@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>館山商工会議所セミナー | 市内事業者デジタル化支援事業説明会</title>
+    <meta name="description" content="館山商工会議所主催のデジタル化支援事業説明会。2025年8月4日開催。IT投資で売上2.1倍を実現する無料セミナー。補助金活用で費用負担1/3削減。専門家による個別診断・継続サポート付き。">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #93c5fd 0%, #bfdbfe 50%, #fed7aa 100%); }
+        .text-shadow { text-shadow: 2px 2px 4px rgba(0,0,0,0.1); }
+        .card-shadow { box-shadow: 0 10px 25px rgba(0,0,0,0.06); }
+        .pulse-animation { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .8; }
+        }
+        .instructor-label {
+            color: #ffffff;
+            background-color: rgba(0,0,0,0.4);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+            display: inline-block;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+        .local-instructor-card {
+            background: linear-gradient(135deg, #fde68a 0%, #fed7aa 100%);
+            position: relative;
+        }
+        .local-instructor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.05);
+            border-radius: 0.5rem;
+        }
+        .local-instructor-content {
+            position: relative;
+            z-index: 1;
+        }
+        .enhanced-text {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .umezaki-container {
+            width: 96px;
+            height: 96px;
+            background-color: #ffffff !important;
+            border: 4px solid #ffffff;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .umezaki-photo {
+            width: 140%;
+            height: 140%;
+            object-fit: cover;
+            object-position: 75% 25%;
+            background-color: #ffffff !important;
+            border-radius: 50%;
+        }
+        .kanai-container {
+            width: 96px;
+            height: 96px;
+            background: white;
+            border: 4px solid white;
+        }
+        .kanai-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .city-emblem {
+            width: 48px;
+            height: 48px;
+        }
+        .city-header-container {
+            background: white;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .city-names {
+            color: #93c5fd;
+        }
+        .main-title {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.2;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            .main-title {
+                font-size: 2.5rem;
+            }
+        }
+        .catchphrase {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+        }
+        @media (max-width: 768px) {
+            .catchphrase {
+                font-size: 1.8rem;
+            }
+        }
+        .energetic-message {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #fed7aa;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
+            animation: bounce 2s infinite;
+            white-space: nowrap;
+            overflow: visible;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        @media (max-width: 768px) {
+            .energetic-message {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .energetic-message {
+                font-size: 1.5rem;
+            }
+        }
+        .support-banner {
+            background: white;
+            color: #93c5fd;
+            font-size: 3rem;
+            font-weight: 900;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.06);
+            padding: 32px 0;
+            margin: 0;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 768px) {
+            .support-banner {
+                font-size: 1.8rem;
+                padding: 24px 0;
+            }
+        }
+        .special-lecture-badge {
+            background: linear-gradient(135deg, #fed7aa 0%, #fde68a 100%);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            display: inline-block;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(253, 230, 138, 0.2);
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+        .contact-info-prominent {
+            background: linear-gradient(135deg, #86efac 0%, #bbf7d0 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 25px rgba(134, 239, 172, 0.15);
+            border: 3px solid rgba(255,255,255,0.15);
+        }
+        .contact-info-prominent a {
+            color: #fef3c7;
+            text-decoration: underline;
+            font-weight: 800;
+        }
+        .contact-info-prominent a:hover {
+            color: #fed7aa;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            margin: 8px 0;
+        }
+        .contact-separator {
+            margin: 0 16px;
+            font-weight: bold;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .contact-info-prominent {
+                font-size: 1.2rem;
+                padding: 16px;
+            }
+            .contact-layout {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-separator {
+                display: none;
+            }
+        }
+        .benefit-card-1 {
+            background: linear-gradient(135deg, #93c5fd 0%, #bfdbfe 100%);
+            color: white;
+            border: 4px solid #fed7aa;
+        }
+        .benefit-card-2 {
+            background: linear-gradient(135deg, #fed7aa 0%, #fde68a 100%);
+            color: white;
+            border: 4px solid #93c5fd;
+        }
+        .benefit-card-3 {
+            background: linear-gradient(135deg, #93c5fd 0%, #fed7aa 100%);
+            color: white;
+            border: 4px solid #bfdbfe;
+        }
+        .benefit-number {
+            background: rgba(255,255,255,0.9);
+            color: #93c5fd;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+        }
+        .benefit-title {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+        }
+        .benefit-description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .step-container {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 20px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .step-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0f2fe' fill-opacity='0.2'%3E%3Cpath d='m36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+            opacity: 0.08;
+        }
+        .step-header {
+            position: relative;
+            z-index: 1;
+        }
+        .step-badge {
+            background: linear-gradient(135deg, #93c5fd 0%, #bfdbfe 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 1.25rem;
+            font-weight: 900;
+            display: inline-block;
+            margin-bottom: 1rem;
+            box-shadow: 0 4px 15px rgba(147, 197, 253, 0.15);
+            border: 3px solid rgba(255,255,255,0.15);
+        }
+        .step-title {
+            color: #93c5fd;
+            font-size: 2rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.06);
+        }
+        .step-subtitle {
+            color: #bfdbfe;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .step-content {
+            position: relative;
+            z-index: 1;
+            background: rgba(255,255,255,0.9);
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            border: 2px solid rgba(191, 219, 254, 0.15);
+        }
+        .step-arrow {
+            text-align: center;
+            font-size: 3rem;
+            color: #fed7aa;
+            margin: 2rem 0;
+            animation: bounce-arrow 2s infinite;
+        }
+        @keyframes bounce-arrow {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-10px); }
+            60% { transform: translateY(-5px); }
+        }
+        .step-detail-item {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 20%, #fed7aa 100%);
+            color: #92400e;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            border: 2px solid rgba(253, 230, 138, 0.15);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .step-requirement {
+            background: linear-gradient(135deg, #fecaca 0%, #fca5a5 20%, #f87171 100%);
+            color: #7f1d1d;
+            padding: 16px;
+            border-radius: 12px;
+            margin-top: 1rem;
+            font-weight: 700;
+            border: 3px solid rgba(248, 113, 113, 0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .step-subsidy-item {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 20%, #86efac 100%);
+            color: #14532d;
+            padding: 16px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            border: 3px solid rgba(134, 239, 172, 0.15);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .step-highlight {
+            background: linear-gradient(135deg, #c084fc 0%, #d8b4fe 100%);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+            border: 2px solid rgba(255,255,255,0.15);
+        }
+        .instructor-title {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            display: inline-block;
+        }
+        
+        /* CTA Button Styles */
+        .cta-button {
+            background: linear-gradient(135deg, #fca5a5 0%, #f9a8d4 50%, #ec4899 100%);
+            color: white;
+            font-weight: 900;
+            font-size: 1.5rem;
+            padding: 20px 40px;
+            border-radius: 60px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(252, 165, 165, 0.2);
+            border: 4px solid rgba(255,255,255,0.2);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+            animation: pulse-glow 2s ease-in-out infinite alternate;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: left 0.6s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(252, 165, 165, 0.3);
+            background: linear-gradient(135deg, #fecaca 0%, #fca5a5 50%, #f9a8d4 100%);
+        }
+        
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 8px 25px rgba(252, 165, 165, 0.2); }
+            100% { box-shadow: 0 8px 35px rgba(252, 165, 165, 0.4), 0 0 20px rgba(252, 165, 165, 0.15); }
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(252, 165, 165, 0.03) 0%, rgba(253, 230, 138, 0.03) 100%);
+            border-radius: 20px;
+            border: 2px solid rgba(252, 165, 165, 0.06);
+        }
+        
+        @media (max-width: 768px) {
+            .cta-button {
+                font-size: 1.2rem;
+                padding: 16px 32px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center mb-8">
+                <div class="city-header-container">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://page1.genspark.site/v1/base64_upload/b8667f5e121a32e2d49b3330272506e5" alt="南房総市章" class="city-emblem">
+                            <div class="text-2xl font-bold city-names">南房総市</div>
+                        </div>
+                        <div class="text-2xl city-names">×</div>
+                        <div class="flex items-center space-x-3">
+                            <img src="https://page1.genspark.site/v1/base64_upload/709051525745540286419bd790927079" alt="館山市章" class="city-emblem">
+                            <div class="text-2xl font-bold city-names">館山市</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <div class="text-lg mb-6 text-shadow">事業者のみなさまへ</div>
+                <h1 class="main-title mb-8 text-shadow leading-tight">
+                    市内事業者<br>
+                    <span class="text-yellow-200">デジタル化支援事業</span><br>
+                    説明会
+                </h1>
+                <div class="catchphrase mb-2 text-orange-200">
+                    IT投資の有無で売上が2.1倍変わる！
+                </div>
+                <div class="text-sm text-orange-100 mb-8">
+                    ※中小企業白書より
+                </div>
+                <div class="energetic-message mb-8">
+                    <i class="fas fa-star mr-3"></i>
+                    デジタル化で事業をもっと元気に！
+                    <i class="fas fa-star ml-3"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CTA Section 1 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Support Banner -->
+    <section class="support-banner text-center">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-center mb-4">
+                <i class="fas fa-hands-helping text-orange-400 text-5xl mr-4"></i>
+                <div>売上アップ＆業務効率化を<br>南房総市・館山市が全力で応援します！</div>
+                <i class="fas fa-rocket text-orange-400 text-5xl ml-4"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Info -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-blue-300 text-white rounded-lg p-8 mb-8 card-shadow">
+                    <div class="flex flex-wrap items-center justify-between">
+                        <div class="flex-1 mb-4 md:mb-0">
+                            <h2 class="text-3xl font-bold mb-4 flex items-center">
+                                <i class="fas fa-calendar-alt mr-3 text-orange-300"></i>
+                                8月4日（月）13:30〜15:30
+                            </h2>
+                            <p class="text-xl mb-2 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-3 text-orange-300"></i>
+                                館山商工会議所 大ホール
+                            </p>
+                        </div>
+                        <div class="bg-orange-300 text-white px-8 py-4 rounded-full text-2xl font-bold pulse-animation">
+                            参加無料
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enhanced Contact Information -->
+                <div class="contact-info-prominent text-center">
+                    <div class="flex items-center justify-center mb-4">
+                        <i class="fas fa-phone-alt mr-3 text-2xl"></i>
+                        <span class="text-2xl font-black">お申し込み・お問い合わせ</span>
+                    </div>
+                    <div class="contact-layout flex items-center justify-center">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span class="mr-2">メール:</span>
+                            <span>mbt@dig-na.com</span>
+                        </div>
+                        <div class="contact-separator">|</div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone mr-2"></i>
+                            <span class="mr-2">電話:</span>
+                            <span>050-3183-0200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 2 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Special Lecture -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="special-lecture-badge mb-6">特別講演</div>
+                    <h2 class="text-3xl font-bold text-blue-400 mb-4">中小企業のDXとは？今こそ取り組もう！</h2>
+                    <h3 class="text-4xl font-black text-blue-400">デジタル化5つの原則</h3>
+                    <p class="text-xl text-gray-700 mt-4">初心者でも大丈夫！今日から真似できる事例紹介</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white rounded-lg p-6 card-shadow text-center">
+                        <div class="text-4xl mb-4">💰</div>
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">「儲かる」成功事例</h4>
+                        <p class="text-gray-600">実際の収益向上事例を詳しく解説</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 card-shadow text-center">
+                        <div class="text-4xl mb-4">👥</div>
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">「人手不足」解消事例</h4>
+                        <p class="text-gray-600">効率化による人材課題の解決方法</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 card-shadow text-center">
+                        <div class="text-4xl mb-4">✅</div>
+                        <h4 class="text-xl font-bold text-blue-400 mb-2">「失敗しない」IT導入の方法</h4>
+                        <p class="text-gray-600">リスクを最小限に抑えた導入戦略</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 3 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Speakers -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center text-blue-400 mb-12">講師紹介</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- Main Speaker -->
+                    <div class="bg-blue-300 text-white rounded-lg p-8 card-shadow">
+                        <div class="flex items-center mb-6">
+                            <div class="umezaki-container mr-6 flex-shrink-0">
+                                <img src="https://cdn1.genspark.ai/user-upload-image/rmbg_generated/0_eeee8b2e-784a-4da8-8b95-458c9b87e96a" alt="梅崎健理" class="umezaki-photo">
+                            </div>
+                            <div>
+                                <div class="instructor-label">メイン講師</div>
+                                <h3 class="text-2xl font-bold">梅崎 健理</h3>
+                                <div class="instructor-title">DX学校 校長</div>
+                                <div class="instructor-title">株式会社ディグナ代表取締役</div>
+                            </div>
+                        </div>
+                        <div class="space-y-2 text-sm">
+                            <p><i class="fas fa-graduation-cap mr-2 text-orange-200"></i>iU大学客員教授</p>
+                            <p><i class="fas fa-university mr-2 text-orange-200"></i>慶應義塾大学大学院 政策・メディア研究科 研究員</p>
+                            <p><i class="fas fa-trophy mr-2 text-orange-200"></i>2010年、高校在学中にディグナを設立</p>
+                            <p><i class="fas fa-award mr-2 text-orange-200"></i>新語・流行語大賞「～なう」トップ10受賞</p>
+                            <p><i class="fas fa-heart mr-2 text-orange-200"></i>ITに詳しくない地方の中小企業に寄り添う「DX学校」を運営</p>
+                        </div>
+                    </div>
+
+                    <!-- Local Speaker -->
+                    <div class="local-instructor-card text-white rounded-lg p-8 card-shadow">
+                        <div class="local-instructor-content">
+                            <div class="flex items-center mb-6">
+                                <div class="kanai-container rounded-full mr-6 flex-shrink-0 overflow-hidden">
+                                    <img src="https://page1.genspark.site/v1/base64_upload/d6761e39a23d891d36f58d44a8a48eba" alt="金井俊樹" class="kanai-photo">
+                                </div>
+                                <div>
+                                    <div class="instructor-label enhanced-text">地域担当講師</div>
+                                    <h3 class="text-2xl font-bold text-white enhanced-text">金井 俊樹</h3>
+                                    <div class="instructor-title">DX学校館山校 校長</div>
+                                    <div class="instructor-title">IT導入診断士</div>
+                                    <div class="instructor-title">Google10Xナビゲーター</div>
+                                </div>
+                            </div>
+                            <div class="space-y-2 text-sm">
+                                <p class="enhanced-text"><i class="fas fa-code mr-2 text-yellow-100"></i>システムエンジニア14年の経験</p>
+                                <p class="enhanced-text"><i class="fas fa-chart-line mr-2 text-yellow-100"></i>外資系生命保険会社でセールス・マネージャー6年間</p>
+                                <p class="enhanced-text"><i class="fas fa-gas-pump mr-2 text-yellow-100"></i>山口県でガソリンスタンド経営</p>
+                                <p class="enhanced-text"><i class="fas fa-baby mr-2 text-yellow-100"></i>2児のパパ</p>
+                                <p class="enhanced-text"><i class="fas fa-handshake mr-2 text-yellow-100"></i>南房総市・館山市のデジタル化支援事業メイン担当</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 4 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Benefits -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-400 mb-4">参加メリット</h2>
+                <p class="text-xl text-center text-gray-600 mb-12">このセミナーに参加することで得られる3つの大きなメリット</p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="benefit-card-1 rounded-lg p-8 card-shadow text-center">
+                        <div class="benefit-number">①</div>
+                        <div class="benefit-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <h3 class="benefit-title">補助金で費用負担を1/3に削減</h3>
+                        <p class="benefit-description">
+                            市の補助金制度を分かりやすく解説。最大で導入費用の2/3を補助金でカバーでき、あなたの負担を大幅に軽減します。申請方法から活用事例まで詳しくご説明します。
+                        </p>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="benefit-card-2 rounded-lg p-8 card-shadow text-center">
+                        <div class="benefit-number">②</div>
+                        <div class="benefit-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3 class="benefit-title">ツール選びで迷わない</h3>
+                        <p class="benefit-description">
+                            御社にピッタリなITツールを専門家が厳選。業種・規模・課題に合わせた最適なツールを提案し、失敗しない選択をサポートします。もう迷う必要はありません。
+                        </p>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="benefit-card-3 rounded-lg p-8 card-shadow text-center">
+                        <div class="benefit-number">③</div>
+                        <div class="benefit-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3 class="benefit-title">導入後も結果が出るまで伴走</h3>
+                        <p class="benefit-description">
+                            設定から社内定着まで、プロが継続的にサポート。導入して終わりではなく、確実に効果が出るまで二人三脚で支援します。安心してデジタル化に取り組めます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 5 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Steps Process -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center text-blue-400 mb-4">デジタル化支援の流れ</h2>
+                <p class="text-xl text-center text-gray-600 mb-12">3つのステップで安心してデジタル化を進められます</p>
+                
+                <!-- STEP 1 -->
+                <div class="step-container mb-8">
+                    <div class="step-header text-center mb-6">
+                        <div class="step-badge">STEP 1</div>
+                        <h3 class="step-title">セミナー</h3>
+                        <p class="step-subtitle">まずは無料セミナーに参加しよう！</p>
+                    </div>
+                    <div class="step-content">
+                        <div class="text-center mb-4">
+                            <h4 class="text-2xl font-bold text-blue-400 mb-2">市内事業者 デジタル化支援事業 説明会</h4>
+                            <div class="step-highlight">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                「うちも取り組みたくなった！でも何をしたらよいの？」
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="step-detail-item text-center">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                8月4日（月）13:30-15:30
+                            </div>
+                            <div class="step-detail-item text-center">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                館山商工会議所 大ホール
+                            </div>
+                            <div class="step-detail-item text-center">
+                                <i class="fas fa-gift mr-2"></i>
+                                参加費無料
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="step-container mb-8">
+                    <div class="step-header text-center mb-6">
+                        <div class="step-badge">STEP 2</div>
+                        <h3 class="step-title">経営診断</h3>
+                        <p class="step-subtitle">御社にピッタリなITツール（ソフトウェア）を専門家が選定</p>
+                    </div>
+                    <div class="step-content">
+                        <div class="text-center mb-4">
+                            <h4 class="text-2xl font-bold text-blue-400 mb-2">経営課題を解決するITツール診断</h4>
+                            <div class="step-highlight">
+                                <i class="fas fa-cogs mr-2"></i>
+                                「いよいよデジタルスタート。でもかかる費用は抑えたい...」
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4 mb-4">
+                            <div class="step-detail-item">
+                                <strong>募集者数:</strong> 10社程度（先着順）
+                            </div>
+                            <div class="step-detail-item">
+                                <strong>診断方法:</strong> オンライン（希望により訪問）
+                            </div>
+                            <div class="step-detail-item">
+                                <strong>期間:</strong> 個別対応
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 p-4 rounded-lg">
+                            <p class="text-blue-400 font-semibold mb-2">
+                                <i class="fas fa-clipboard-check mr-2"></i>診断内容:
+                            </p>
+                            <ul class="text-blue-500 space-y-1">
+                                <li>• 経営課題を解決するITツールの選定</li>
+                                <li>• 市の補助金の申請に必要な計画書作成</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="step-container mb-8">
+                    <div class="step-header text-center mb-6">
+                        <div class="step-badge">STEP 3</div>
+                        <h3 class="step-title">補助金</h3>
+                        <p class="step-subtitle">デジタル化トライアル補助金（補助率2/3）</p>
+                    </div>
+                    <div class="step-content">
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="step-subsidy-item">
+                                <h4 class="text-xl font-bold mb-3">
+                                    <i class="fas fa-laptop-code mr-2"></i>
+                                    ①業務効率化（ソフトウェア）
+                                </h4>
+                                <p class="text-lg font-bold mb-2">最大50万円まで</p>
+                                <p class="text-sm">業務効率化に寄与するソフトウェアの購入費、利用費、開発費にかかる経費の一部を補助</p>
+                            </div>
+                            <div class="step-subsidy-item">
+                                <h4 class="text-xl font-bold mb-3">
+                                    <i class="fas fa-globe mr-2"></i>
+                                    ②集客拡大（ウェブサイト制作）
+                                </h4>
+                                <p class="text-lg font-bold mb-2">最大25万円まで</p>
+                                <p class="text-sm">集客拡大に寄与するウェブサイトの制作費にかかる経費の一部を補助</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-requirement">
+                            <h4 class="text-xl font-bold mb-3">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>
+                                申請要件
+                            </h4>
+                            <p class="mb-2">上記「セミナー」「経営診断」に参加する必要があります</p>
+                            <p class="text-sm">（その他、詳細は市のホームページにて）</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 6 -->
+    <div class="cta-section">
+        <a href="https://google.com" class="cta-button" target="_blank">
+            <i class="fas fa-hand-point-right mr-3"></i>
+            お申し込みはこちらから！
+            <i class="fas fa-hand-point-left ml-3"></i>
+        </a>
+    </div>
+
+    <!-- Individual Consultation -->
+    <section class="py-16 bg-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg p-8 card-shadow text-center">
+                    <div class="bg-blue-300 text-white px-6 py-2 rounded-full inline-block text-lg font-bold mb-4">同時開催</div>
+                    <h2 class="text-3xl font-bold text-blue-400 mb-4">専門家による個別相談会</h2>
+                    <h3 class="text-2xl font-bold text-orange-400 mb-6">経営課題を解決するITツール診断</h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div class="text-left">
+                            <h4 class="font-bold text-blue-400 mb-2">時間</h4>
+                            <p class="text-xl">15:30〜16:00</p>
+                        </div>
+                        <div class="text-left">
+                            <h4 class="font-bold text-blue-400 mb-2">定員</h4>
+                            <p class="text-xl text-red-400 font-bold">先着5社限定</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-yellow-100 border-l-4 border-yellow-300 p-4 mb-6">
+                        <p class="text-gray-700">
+                            <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                            個別相談会は定員に限りがあります。お早めにお申し込みください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="py-16 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center text-white">
+                <h2 class="text-3xl font-bold mb-6 text-shadow">今すぐお申し込みください！</h2>
+                <p class="text-xl mb-8 text-shadow">席数に限りがあります。デジタル化で事業を変える第一歩をここから始めましょう。</p>
+                
+                <!-- Unified CTA Button -->
+                <div class="mb-8">
+                    <a href="https://google.com" class="cta-button" target="_blank" style="background: linear-gradient(135deg, #fde68a 0%, #fed7aa 50%, #f59e0b 100%); color: #92400e; font-size: 2rem; padding: 24px 48px;">
+                        <i class="fas fa-rocket mr-3"></i>
+                        お申し込みはこちらから！
+                        <i class="fas fa-rocket ml-3"></i>
+                    </a>
+                </div>
+                
+                <div class="bg-white bg-opacity-15 rounded-lg p-6">
+                    <h3 class="text-xl font-bold mb-4">連絡先</h3>
+                    <div class="contact-info-prominent text-center">
+                        <div class="contact-layout flex items-center justify-center">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <span class="mr-2">メール:</span>
+                                <span><a href="mailto:mbt@dig-na.com" class="text-yellow-200 hover:text-yellow-300 underline">mbt@dig-na.com</a></span>
+                            </div>
+                            <div class="contact-separator">|</div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone mr-2"></i>
+                                <span class="mr-2">電話:</span>
+                                <span>050-3183-0200</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 pt-4 border-t border-white border-opacity-20">
+                            <p><strong>ウェブサイト:</strong> <a href="https://dx-awa.jp/digi" target="_blank" class="text-yellow-200 hover:text-yellow-300 underline">https://dx-awa.jp/digi</a></p>
+                            <p><strong>主催:</strong> 南房総市・館山市</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-300 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <p class="text-sm">© 2025 南房総市・館山市 デジタル化支援事業 | 運営: 株式会社ディグナ</p>
+                <p class="text-xs mt-2 text-blue-100">本セミナーは南房総市・館山市のデジタル化支援事業の一環として開催されます。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate elements when they come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDr%2BiNmYfCSlZktRDLOeTQ9GkbQHVta75YUGhe2%2FYoFh3ghs0MLsWfJrrNjWJooogEpOcl3S0GAXoy7p6fx8cQZ37HIZTbISlELnJ7dQo%2BDA%2BWWS3GfnrkErdVnLNE7wUCSnQ92FTHfVHfN%2FsbN2VqBMl7IHG7%2BlwQkxFR%2FuCiDAlTVuDXWNDxDnly%2FccFfCHMMPG4h4LUV4vDNvzJhw%2F6d%2FSIxNLCf7d6lNPY0BfRtTX12aRJA4LP%2B5KHFqR7GT5Lit0TJvJWPfQmDJZk%2F4bg1MVkpPtXJ4tPxtFleWtZCYtFVbKhU3Y1b%2Fuf70qjKudpF4NneUZT4CfdsVydZwLdh3OTJSNaoPARFwWf16EvzCERZwS6NHy%2FnKXMVNlKo38vjrP5YZc1kQ6yb%2FSyAdGEpodHerXXgCw%2FcDAaC1f8ISgDJw8zDjgMHsQE4zMJdTma1xAZZn6irKrv1MeQTF%2Fg5zWwG37RlUSPGqBDJJ3e2jL%2FGB09hemybg7W4ZiiaASpysY9G8NR2jrokeBQTMg6Cc%3D";
+        window.__genspark_locale = "ja-JP";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDr+iNmYfCSlZktRDLOeTQ9GkbQHVta75YUGhe2/YoFh3ghs0MLsWfJrrNjWJooogEpOcl3S0GAXoy7p6fx8cQZ37HIZTbISlELnJ7dQo+DA+WWS3GfnrkErdVnLNE7wUCSnQ92FTHfVHfN/sbN2VqBMl7IHG7+lwQkxFR/uCiDAlTVuDXWNDxDnly/ccFfCHMMPG4h4LUV4vDNvzJhw/6d/SIxNLCf7d6lNPY0BfRtTX12aRJA4LP+5KHFqR7GT5Lit0TJvJWPfQmDJZk/4bg1MVkpPtXJ4tPxtFleWtZCYtFVbKhU3Y1b/uf70qjKudpF4NneUZT4CfdsVydZwLdh3OTJSNaoPARFwWf16EvzCERZwS6NHy/nKXMVNlKo38vjrP5YZc1kQ6yb/SyAdGEpodHerXXgCw/cDAaC1f8ISgDJw8zDjgMHsQE4zMJdTma1xAZZn6irKrv1MeQTF/g5zWwG37RlUSPGqBDJJ3e2jL/GB09hemybg7W4ZiiaASpysY9G8NR2jrokeBQTMg6Cc=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
